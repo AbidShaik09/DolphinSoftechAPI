@@ -2,10 +2,10 @@ using Microsoft.EntityFrameworkCore;
 using WebApplication3.Data_;
 
 
-
-var MyAllowSpecificOrigins = "_specificOrigin";
 var builder = WebApplication.CreateBuilder(args);
 
+
+var MyAllowSpecificOrigins = "_specificOrigin";
 // Add services to the container.
 builder.Services.AddCors(options =>
 {
