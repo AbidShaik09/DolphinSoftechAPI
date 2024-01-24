@@ -1,20 +1,22 @@
-﻿using AuthenticationAPI.Model;
+﻿using AuthenticationAPI.Controllers;
+using AuthenticationAPI.Model;
 
 namespace AuthenticationAPI
 {
     public class TokenAuthenticator
     {
 
-        public bool Authenticate(string accessToken)
+        public bool Authenticate(Client client)
         {
-            accessToken = decode(accessToken);
+
+            string accessToken = decode(client.accessToken);
             string[] userToken = accessToken.Split("validTill");
             if (userToken.Length < 2)
             {
                 return false;
             }
             DateTime t = DateTime.Parse(userToken[1]);
-            if (t >= DateTime.Now)
+            if ( client.username==userToken[0] && t >= DateTime.Now)
             {
                 return true;
             }
@@ -26,15 +28,17 @@ namespace AuthenticationAPI
 
         }
 
-        public string GenerateAuthToken(LoginPattern user)
+        public Client GenerateAuthToken(LoginPattern user)
         {
+            Client client = new Client();
             DateTime d = DateTime.Now;
             d = d.AddHours(6);
 
             string accessToken = user.username + "validTill" + (d);
             accessToken = "accessToken:" + encode(accessToken);
-
-            return accessToken;
+            client.accessToken = accessToken;
+            client.username= user.username;
+            return client;
         }
 
         public string encode(string raw)

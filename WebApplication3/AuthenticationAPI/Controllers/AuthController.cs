@@ -6,8 +6,14 @@ using WebApplication3.Model;
 
 namespace AuthenticationAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
+
+    public class Client
+    {
+        public string username {  get; set; }
+        public string accessToken {  get; set; }
+    }
     public class AuthController : ControllerBase
     {
         private readonly ApplicationDbContext _db;
@@ -17,21 +23,21 @@ namespace AuthenticationAPI.Controllers
 
         }
 
-        [HttpPost]
+        [HttpPost("Login/")]
         public IActionResult Login([FromBody] LoginPattern userdetails)
         {
 
             string username=userdetails.username;
 
-            Report user = _db.reports.FirstOrDefault(reports => reports.username == username);
+            Report user = _db.reports.FirstOrDefault(reports => reports.Username == username);
             if (user != null)
             {
-                if (user.password == userdetails.password)
+                if (user.Password == userdetails.password)
                 {
 
                     TokenAuthenticator authenticator = new TokenAuthenticator();
-                    string accessToken = authenticator.GenerateAuthToken(userdetails);
-                    return (Ok(accessToken));
+                    Client response = authenticator.GenerateAuthToken(userdetails);
+                    return (Ok(response));
                 }
                 else
                 {
@@ -44,17 +50,17 @@ namespace AuthenticationAPI.Controllers
             }
 
         }
-        [HttpGet]
-        public IActionResult CheckToken(string accessToken)
+        [HttpPost("/CheckTokenValidity")]
+        public IActionResult CheckToken([FromBody] Client client)
         {
-
+            string accessToken=client.accessToken;
             TokenAuthenticator a = new TokenAuthenticator();
             string s = "";
             if (s.Equals("Invalid Token"))
             {
                 return BadRequest("Access Denied, You are not authorized to perform this request");
             }
-            if (a.Authenticate(accessToken))
+            if (a.Authenticate(client))
             {
                 return Ok("Valid Access Token");
             }

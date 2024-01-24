@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "gEUF3YkjE+TQRcGdsjtmt1OYwOizILpSuabKoyrXQoc=",
+  "Hash": "YD+0WdJM8vPKTwsoFiuG0BshXDkcFd7CeLaCXcwZDbw=",
   "Source": "AuthenticationAPI",
   "BasePath": "_content/AuthenticationAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\Aamir\\source\\repos\\WebApplication3\\WebApplication3\\RegisterationAPI.csproj",
+      "Identity": "C:\\Users\\Aamir\\Documents\\Github\\DolphinSoftechAPI\\WebApplication3\\WebApplication3\\RegisterationAPI.csproj",
       "Version": 2,
       "Source": "RegisterationAPI",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

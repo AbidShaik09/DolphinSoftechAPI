@@ -14,8 +14,7 @@ namespace WebApplication3.Controllers
     {
         private readonly ApplicationDbContext _db;
         // GET: api/<ReportsController>
-        //String[] ReportsDb = new string[] {"Abid","Ahmed","Priya","Gudiya","Naveen","Ganesh","Akanksha","Swetha" };
-
+       
         public RegisterController(ApplicationDbContext db)
         {
             _db =db;
@@ -23,19 +22,7 @@ namespace WebApplication3.Controllers
 
 
         // GET api/<ReportsController>/5
-        [HttpGet("user/")]
-        public IActionResult Get(string username)
-        {
-            Report user = _db.reports.FirstOrDefault(reports => reports.username == username);
-
-            if (user == null)
-            {
-                return NotFound(); // 404 Not Found
-            }
-            user.password = "hidden";
-
-            return Ok(user); // 200 OK
-        }
+       
 
 
         // POST api/<ReportsController>
@@ -43,7 +30,7 @@ namespace WebApplication3.Controllers
         public  IActionResult Post([FromBody] Report entry)
         {
             //var createdEmployee = await _db.Add<Report>(entry);
-            Report user = _db.reports.FirstOrDefault(e=>(e.username==entry.username));
+            Report user = _db.reports.FirstOrDefault(e=>(e.Username==entry.Username));
             if(entry == null)
             {
                 
@@ -68,7 +55,7 @@ namespace WebApplication3.Controllers
         [HttpDelete("{username}")]
         public void Delete(string username)
         {
-            Report noticePeriodUser=_db.reports.FirstOrDefault(reports=>(reports.username==username));
+            Report noticePeriodUser=_db.reports.FirstOrDefault(reports=>(reports.Username==username));
             if(noticePeriodUser!=null)
             {
                 _db.reports.Remove(noticePeriodUser);

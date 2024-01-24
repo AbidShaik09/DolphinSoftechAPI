@@ -1,11 +1,34 @@
 {
   "Version": 1,
-  "Hash": "NyqRNM6b0EH1GhskL1kyPL35TOUUvN37oT3C7VZ619s=",
+  "Hash": "WV04I3VfgHJahY7oqMiBx7Cmy+iEgsfK22scZDqrgvY=",
   "Source": "DolphinSoftechHomeAPI",
   "BasePath": "_content/DolphinSoftechHomeAPI",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Aamir\\Documents\\Github\\DolphinSoftechAPI\\WebApplication3\\AuthenticationAPI\\AuthenticationAPI.csproj",
+      "Version": 2,
+      "Source": "AuthenticationAPI",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    },
+    {
+      "Identity": "C:\\Users\\Aamir\\Documents\\Github\\DolphinSoftechAPI\\WebApplication3\\WebApplication3\\RegisterationAPI.csproj",
+      "Version": 2,
+      "Source": "RegisterationAPI",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": []
 }

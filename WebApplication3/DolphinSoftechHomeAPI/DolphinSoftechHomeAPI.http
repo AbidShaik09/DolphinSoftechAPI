@@ -1,4 +1,4 @@
-@DolphinSoftechHomeAPI_HostAddress = http://localhost:5059
+@DolphinSoftechHomeAPI_HostAddress = http://localhost:5270
 
 GET {{DolphinSoftechHomeAPI_HostAddress}}/weatherforecast/
 Accept: application/json

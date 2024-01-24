@@ -5,9 +5,9 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegisterationAPI", "WebApplication3\RegisterationAPI.csproj", "{AF25DC55-0CEA-4BAB-9CB2-68D3D7CD7647}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DolphinSoftechHomeAPI", "DolphinSoftechHomeAPI\DolphinSoftechHomeAPI.csproj", "{EBA48D04-1DB5-4C6C-A963-DFE18FA5FBBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationAPI", "AuthenticationAPI\AuthenticationAPI.csproj", "{B8FE3E9C-9328-476F-94B6-83AC3CA0199E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationAPI", "AuthenticationAPI\AuthenticationAPI.csproj", "{B8FE3E9C-9328-476F-94B6-83AC3CA0199E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DolphinSoftechHomeAPI", "DolphinSoftechHomeAPI\DolphinSoftechHomeAPI.csproj", "{ECAC9BEF-5E5E-4F54-BCD5-548FF175241D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{AF25DC55-0CEA-4BAB-9CB2-68D3D7CD7647}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF25DC55-0CEA-4BAB-9CB2-68D3D7CD7647}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF25DC55-0CEA-4BAB-9CB2-68D3D7CD7647}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EBA48D04-1DB5-4C6C-A963-DFE18FA5FBBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EBA48D04-1DB5-4C6C-A963-DFE18FA5FBBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EBA48D04-1DB5-4C6C-A963-DFE18FA5FBBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EBA48D04-1DB5-4C6C-A963-DFE18FA5FBBD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B8FE3E9C-9328-476F-94B6-83AC3CA0199E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B8FE3E9C-9328-476F-94B6-83AC3CA0199E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8FE3E9C-9328-476F-94B6-83AC3CA0199E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8FE3E9C-9328-476F-94B6-83AC3CA0199E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECAC9BEF-5E5E-4F54-BCD5-548FF175241D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECAC9BEF-5E5E-4F54-BCD5-548FF175241D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECAC9BEF-5E5E-4F54-BCD5-548FF175241D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECAC9BEF-5E5E-4F54-BCD5-548FF175241D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

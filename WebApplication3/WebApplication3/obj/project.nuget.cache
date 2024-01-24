@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XUvNfNZN3SDxcDSfP2ghoNdoueJwRUqSinQm1NQn6+/EMK0+J+Oy0ujut1Y2pMTzCBDzvwNysv88fO4zieAd1A==",
+  "dgSpecHash": "GNUsG/f6zxjnc+bbKUqEeqb6hq6mWm/UXNzDf5+PARzffYkTgHwAGbvHB7PDizwKHrgeWWEt7rpLXJQvpSc32w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aamir\\source\\repos\\WebApplication3\\WebApplication3\\RegisterationAPI.csproj",
+  "projectFilePath": "C:\\Users\\Aamir\\Documents\\Github\\DolphinSoftechAPI\\WebApplication3\\WebApplication3\\RegisterationAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aamir\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Aamir\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

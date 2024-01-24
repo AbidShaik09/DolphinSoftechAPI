@@ -4725,11 +4725,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aamir\\source\\repos\\WebApplication3\\WebApplication3\\RegisterationAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Aamir\\Documents\\Github\\DolphinSoftechAPI\\WebApplication3\\WebApplication3\\RegisterationAPI.csproj",
       "projectName": "RegisterationAPI",
-      "projectPath": "C:\\Users\\Aamir\\source\\repos\\WebApplication3\\WebApplication3\\RegisterationAPI.csproj",
+      "projectPath": "C:\\Users\\Aamir\\Documents\\Github\\DolphinSoftechAPI\\WebApplication3\\WebApplication3\\RegisterationAPI.csproj",
       "packagesPath": "C:\\Users\\Aamir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aamir\\source\\repos\\WebApplication3\\WebApplication3\\obj\\",
+      "outputPath": "C:\\Users\\Aamir\\Documents\\Github\\DolphinSoftechAPI\\WebApplication3\\WebApplication3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aamir\\AppData\\Roaming\\NuGet\\NuGet.Config",
